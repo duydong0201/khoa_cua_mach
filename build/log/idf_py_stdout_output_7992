@@ -1,0 +1,230 @@
+Command: D:\ESP32_IDF\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:\ESP32_IDF\Espressif\frameworks\esp-idf-v5.5.3\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 D:\ESP32_IDF\Espressif\frameworks\hello_world\build\hello_world.elf D:\ESP32_IDF\Espressif\frameworks\hello_world\build\bootloader\bootloader.elf --force-color -m 'D:\ESP32_IDF\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'D:\ESP32_IDF\Espressif\frameworks\esp-idf-v5.5.3\tools\idf.py' '-p' 'COM12'
+ff0030,len:6280
+load:0  01 02 00009000 00006000
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f2e4h (1277�ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6280
+load:0x40078000,len:15864
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v5.5.3-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 25 2026 02:41:47[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f2e4h (127716) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0002f30c vaddr=3ffb0000 size=00d0ch (  3340) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=a4288h (672392) map[0m
+[0;32mI (364) esp_image: segment 3: paddr=000d42b0 vaddr=3ffb0d0c size=0369ch ( 13980) load[0m
+[0;32mI (369) esp_image: segment 4: paddr=000d7954 vaddr=40080000 size=19480h (103552) load[0m
+[0;32mI (410) esp_image: segment 5: paddr=000f0ddc vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (422) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (422) boot: Disabling RNG early entropy source...[0m
+[0;32mI (433) cpu_start: Multicore app[0m
+[0;32mI (441) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (442) cpu_start: Pro cpu start user code[0m
+[0;32mI (442) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) app_init: Application information:[0m
+[0;32mI (447) app_init: Project name:     hello_world[0m
+[0;32mI (452) app_init: App version:      1[0m
+[0;32mI (455) app_init: Compile time:     Apr 25 2026 02:41:38[0m
+[0;32mI (460) app_init: ELF file SHA256:  3226f59df...[0m
+[0;32mI (464) app_init: ESP-IDF:          v5.5.3-dirty[0m
+[0;32mI (469) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (472) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (476) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (481) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (487) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFB8D20 len 000272E0 (156 KiB): DRAM[0m
+[0;32mI (497) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (502) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (508) heap_init: At 40099480 len 00006B80 (26 KiB): IRAM[0m
+[0;33mW (514) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (530) spi_flash: flash io: dio[0m
+[0;33mW (533) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (545) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (555) main_task: Started on CPU0[0m
+[0;32mI (565) main_task: Calling app_main()[0m
+[0;33mW (1635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (3635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (4635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (5635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (6635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (7635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (8635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (9635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (10635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (11635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;32mI (11775) SMART_LOCKER: PIN1=1111, PIN2=2222[0m
+[0;32mI (13045) wifi:wifi driver task: 3ffc0e58, prio:23, stack:6656, core=0[0m
+[0;32mI (13055) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (13055) wifi:wifi certification version: v7.0[0m
+[0;32mI (13055) wifi:config NVS flash: enabled[0m
+[0;32mI (13055) wifi:config nano formatting: disabled[0m
+[0;32mI (13055) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (13065) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (13065) wifi:Init management short buffer num: 32[0m
+[0;32mI (13075) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (13075) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (13085) wifi:Init static rx buffer num: 10[0m
+[0;32mI (13085) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (13095) wifi_init: rx ba win: 6[0m
+[0;32mI (13095) wifi_init: accept mbox: 6[0m
+[0;32mI (13095) wifi_init: tcpip mbox: 32[0m
+[0;32mI (13095) wifi_init: udp mbox: 6[0m
+[0;32mI (13105) wifi_init: tcp mbox: 6[0m
+[0;32mI (13105) wifi_init: tcp tx win: 5760[0m
+[0;32mI (13105) wifi_init: tcp rx win: 5760[0m
+[0;32mI (13115) wifi_init: tcp mss: 1440[0m
+[0;32mI (13115) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (13115) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (13125) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (13135) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (13215) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (13245) wifi:mode : sta (d4:e9:f4:e9:1e:00)[0m
+[0;32mI (13245) wifi:enable tsf[0m
+[0;32mI (13245) SMART_LOCKER: WiFi started, connecting...[0m
+[0;32mI (13265) wifi:new:<9,2>, old:<1,0>, ap:<255,255>, sta:<9,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (13265) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (13265) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (13275) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (13315) main_task: Returned from app_main()[0m
+[0;32mI (13385) wifi:connected with TP-Link_7DF6, aid = 3, channel 9, 40D, bssid = 30:de:4b:c7:7d:f6[0m
+[0;32mI (13385) wifi:security: WPA2-PSK, phy: bgn, rssi: -49[0m
+[0;32mI (13395) wifi:pm start, type: 1[0m
+
+[0;32mI (13395) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (13415) wifi:<ba-add>idx:0 (ifx:0, 30:de:4b:c7:7d:f6), tid:0, ssn:3, winSize:64[0m
+[0;32mI (13415) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (14925) esp_netif_handlers: sta ip: 192.168.0.103, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (14925) SMART_LOCKER: Got IP: 192.168.0.103[0m
+[0;32mI (15265) wifi:<ba-add>idx:1 (ifx:0, 30:de:4b:c7:7d:f6), tid:3, ssn:0, winSize:64[0m
+[0;32mI (15615) SMART_LOCKER: MQTT connected[0m
+[0;32mI (25365) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (26845) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (27175) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (27515) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (28105) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (29145) SMART_LOCKER: Key pressed: A[0m
+[0;32mI (31455) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (37915) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (48325) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (57585) SMART_LOCKER: Key pressed: 2[0m
+[0;32mI (59935) SMART_LOCKER: Key pressed: 2[0m
+[0;32mI (61165) SMART_LOCKER: Key pressed: 2[0m
+[0;32mI (61495) SMART_LOCKER: Key pressed: 2[0m
+[0;32mI (61835) SMART_LOCKER: Key pressed: 2[0m
+[0;32mI (62225) SMART_LOCKER: Key pressed: 2[0m
+[0;32mI (63065) SMART_LOCKER: Key pressed: A[0m
+[0;32mI (64375) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (67475) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)[0m
+[0;32mI (67485) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (67485) wifi:[ADDBA]RX DELBA, reason:39, delete tid:3, initiator:1(originator)[0m
+[0;32mI (67485) wifi:<ba-del>idx:1, tid:3[0m
+[0;32mI (67695) wifi:<ba-add>idx:0 (ifx:0, 30:de:4b:c7:7d:f6), tid:3, ssn:12, winSize:64[0m
+[0;32mI (75985) SMART_LOCKER: Key pressed: 2[0m
+[0;32mI (77885) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (79515) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (79845) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (80485) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (80875) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (82065) SMART_LOCKER: Key pressed: A[0m
+[0;32mI (89425) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (117635) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (123205) wifi:<ba-add>idx:1 (ifx:0, 30:de:4b:c7:7d:f6), tid:0, ssn:9, winSize:64[0m
+[0;32mI (137945) SMART_LOCKER: Key pressed: 2[0m
+[0;32mI (137975) wifi:[ADDBA]RX DELBA, reason:39, delete tid:0, initiator:1(originator)[0m
+[0;32mI (137975) wifi:<ba-del>idx:1, tid:0[0m
+[0;32mI (137975) wifi:[ADDBA]RX DELBA, reason:39, delete tid:3, initiator:1(originator)[0m
+[0;32mI (137985) wifi:<ba-del>idx:0, tid:3[0m
+[0;32mI (138245) wifi:<ba-add>idx:0 (ifx:0, 30:de:4b:c7:7d:f6), tid:3, ssn:21, winSize:64[0m
+[0;32mI (140895) SMART_LOCKER: Key pressed: 2[0m
+[0;32mI (145025) SMART_LOCKER: Key pressed: C[0m
+[0;32mI (147475) SMART_LOCKER: Key pressed: 2[0m
+[0;32mI (148755) SMART_LOCKER: Key pressed: 2[0m
+[0;32mI (149645) SMART_LOCKER: Key pressed: 2[0m
+[0;32mI (150185) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (150525) SMART_LOCKER: Key pressed: 1[0m
+[0;32mI (152515) SMART_LOCKER: Key pressed: A[0m
+[0;32mI (155505) SMART_LOCKER: Key pressed: 2[0m
+[0;32mI (155845) SMART_LOCKER: Key pressed: 2[0m
+[0;32mI (156185) SMART_LOCKER: Key pressed: 2[0m
+[0;32mI (156625) SMART_LOCKER: Key pressed: 2[0m
+[0;32mI (159065) SMART_LOCKER: Key pressed: A[0m
+[0;32mI (160775) SMART_LOCKER: Key pressed: 1[0m
+cs0_drv:0x00,hd_drv:0x0z��͕��  Length
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f2e4h (127716) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0002f30c vaddr=3ffb0000 size=00d0ch (  3340) load[0m
+[0;32mI (132) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=a4288h (672392) map[0m
+[0;32mI (364) esp_image: segment 3: paddr=000d42b0 vaddr=3ffb0d0c size=0369ch ( 13980) load[0m
+[0;32mI (369) esp_image: segment 4: paddr=000d7954 vaddr=40080000 size=19480h (103552) load[0m
+[0;32mI (410) esp_image: segment 5: paddr=000f0ddc vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (422) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (422) boot: Disabling RNG early entropy source...[0m
+[0;32mI (433) cpu_start: Multicore app[0m
+[0;32mI (441) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (442) cpu_start: Pro cpu start user code[0m
+[0;32mI (442) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (443) app_init: Application information:[0m
+[0;32mI (447) app_init: Project name:     hello_world[0m
+[0;32mI (452) app_init: App version:      1[0m
+[0;32mI (455) app_init: Compile time:     Apr 25 2026 02:41:38[0m
+[0;32mI (460) app_init: ELF file SHA256:  3226f59df...[0m
+[0;32mI (464) app_init: ESP-IDF:          v5.5.3-dirty[0m
+[0;32mI (469) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (472) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (476) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (481) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (487) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFB8D20 len 000272E0 (156 KiB): DRAM[0m
+[0;32mI (497) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (502) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (508) heap_init: At 40099480 len 00006B80 (26 KiB): IRAM[0m
+[0;33mW (514) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (526) spi_flash: detected chip: generic[0m
+[0;32mI (530) spi_flash: flash io: dio[0m
+[0;33mW (533) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (545) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (555) main_task: Started on CPU0[0m
+[0;32mI (565) main_task: Calling app_main()[0m
+[0;33mW (1635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (3635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (4635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (5635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (6635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (7635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (8635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (9635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (10635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (11635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (12635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (13635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (14635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (15635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (16635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (17635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (18635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (19635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (20635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (21635) LCD_I2C: I2C write failed: ESP_ERR_TIMEOUT[0m

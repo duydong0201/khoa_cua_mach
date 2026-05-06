@@ -1,0 +1,16 @@
+idf_component_register(
+    SRCS
+        "hello_world_main.c"
+        "LiquidCrystal_I2C.c"
+        "keypad.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        driver
+        nvs_flash
+        esp_wifi
+        mqtt
+        json
+        esp_event
+        esp_netif
+)
