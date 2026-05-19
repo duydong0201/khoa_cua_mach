@@ -27,8 +27,8 @@
 /* =========================
    WiFi / MQTT config
    ========================= */
-#define WIFI_SSID               "TP-Link_7DF6"
-#define WIFI_PASS               "84301062"
+#define WIFI_SSID               "Redmi K70"
+#define WIFI_PASS               "baodang123"
 #define MQTT_BROKER_URI         "mqtt://broker.hivemq.com"
 #define DEVICE_ID               "locker_ctrl_01"
 
